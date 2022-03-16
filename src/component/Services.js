@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 import { Link } from "react-router-dom";
 import HomeUrl from '../assets/images/home-border.png';
 import Img1 from '~/../../src/assets/images/slides/5.png';
-
+import Img2 from '~/../../src/assets/images/slides/6.png'
 export default class Services extends Component {
   constructor(props) {
     super(props);
@@ -13,18 +13,21 @@ export default class Services extends Component {
       services: [
         {
           id: 'service1',
+          
           icon: 'mdi-check',
           title: "Kung Fu",
           description: "Kung fu est un mot en chinois qui se traduit grossièrement par des compétences acquises avec du temps et des efforts. Ainsi, dans la société chinoise, ce mot pouvait être utilisé non seulement pour désigner un pratiquant d'art martial, mais aussi pour désigner des personnes possédant des compétences différentes"
         },
         {
           id: 'service2',
+       
           icon: 'mdi-check',
           title: "Whushu",
           description: 'Le wushu est également un sport de contact pratiqué au niveau international. Le wushu est l expression mise en avant par les autorités chinoises depuis le début du mouvement de réforme chinois. Le wushu est devenu un sport contemporain que les Chinois tentent d inclure dans les Jeux olympiques d été.'
         },
         {
           id: 'service3',
+          
           icon: 'mdi-check',
           title: "Kung fu et Whushu",
           description: 'Kung fu et Wushu sont des termes qui ont été utilisés pour décrire les arts martiaux chinois. Wushu signifie littéralement "arts martiaux", tandis que Kung fu désigne des compétences acquises avec du temps et des efforts.'
@@ -49,6 +52,7 @@ export default class Services extends Component {
         },
         {
           id: '3',
+
           extraclass: 'pt-3',
           start: 25,
           end: 99,
@@ -68,9 +72,11 @@ export default class Services extends Component {
               <Col lg="12">
                 <div className="title-box text-center">
                   <h3 className="title-heading mt-4">Les termes de FTWKF </h3>
-                  <p className="text-muted f-17 mt-3">Consulter et découvrir toutes les nouvelles de FTWKF </p>
 
-                  <img src={HomeUrl} height="15" className="mt-3" alt="" />
+                  <p className="text-muted f-17 mt-3">Consulter et découvrir toutes les nouvelles de FTWKF </p>
+                    
+                  <img src={Img2} height="500" className="mt-3" alt="" />
+
                 </div>
               </Col>
             </Row>
@@ -81,13 +87,13 @@ export default class Services extends Component {
               {this.state.services.map((item, key) => (
                 <Col lg={4} key={key}>
                   <div className="services-box p-4 mt-4">
-                    <div className="services-icon bg-soft-primary">
-                      <i className={"mdi text-primary " + item.icon}></i>
+                    <div className="">
                     </div>
-                   {item.image}
+                
                     <h5 className="mt-4">{item.title}</h5>
-                    <p className="text-muted mt-3">{item.description}</p>
+                    <img src={HomeUrl} height="15" className="mt-3" alt="" />
 
+                    <p className="text-muted mt-3">{item.description}</p>
                     <div className="mt-3">
                       <Link to="#" className="text-primary f-16">Learn More <i className="mdi mdi-arrow-right ml-1"></i></Link>
                     </div>

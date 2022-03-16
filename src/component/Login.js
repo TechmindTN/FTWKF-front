@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Feature4 from '../assets/images/features/img-4.png';
 import LogoDark from '../assets/images/logo.png';
-
+import img from '../assets/images/slides/4.png'
 export default class Login extends Component {
 
   render() {
@@ -29,7 +29,7 @@ export default class Login extends Component {
                                   className="home-img login-img text-center d-none d-lg-inline-block">
                                   <div className="animation-2"></div>
                                   <div className="animation-3"></div>
-                                  <img src={Feature4} className="img-fluid" alt="" />
+                                  <img src={img} className="img-fluid" alt="" />
                                 </div>
                               </div>
                             </div>
@@ -42,7 +42,7 @@ export default class Login extends Component {
                                 <div className="text-center mt-3">
                                 <Link to="#"><img src={LogoDark} alt=""
                                     height="80" /></Link>
-                                  <p className="text-muted mt-3">Connectez-vous au platforme</p>
+                                  <p className="text-muted mt-3">Connectez-vous</p>
                                 </div>
                                 <div className="p-3 custom-form">
                                   <Form>

@@ -89,7 +89,7 @@ export default class Contact extends Component {
             </Col>
             <Col lg={6}>
               <div className="mt-4">
-                <img src={team.img} alt="" className="img-fluid rounded" />
+                <img  alt="" className="img-fluid rounded" />
               </div>
             </Col>
           </Row>
@@ -104,7 +104,8 @@ export default class Contact extends Component {
               <Col lg="12">
                 <div className="title-box text-center">
                   <h3 className="title-heading mt-4">Le staff de FTWKF </h3>
-                  <p className="text-muted f-17 mt-3">Vivamus ac nulla ultrices laoreet neque mollis mi morbi elementum mauris sit amet arcu <br /> fringilla auctor In eleifend maximus nisi sed vulputate.</p>
+                  <p className="text-muted f-17 mt-3">
+</p>
                   <img src={HomeUrl} height="15" className="mt-3" alt="" />
                 </div>
               </Col>

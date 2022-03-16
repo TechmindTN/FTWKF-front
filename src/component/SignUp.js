@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Feature4 from '../assets/images/features/img-4.png';
 import LogoDark from '../assets/images/logo.png';
+import img from '../assets/images/slides/4.png'
 
 export default class SignUp extends Component {
 
@@ -30,7 +31,7 @@ export default class SignUp extends Component {
                                   className="home-img login-img text-center d-none d-lg-inline-block">
                                   <div className="animation-2"></div>
                                   <div className="animation-3"></div>
-                                  <img src={Feature4} className="img-fluid" alt="" />
+                                  <img src={img} className="img-fluid" alt="" />
                                 </div>
                               </div>
                             </div>

@@ -4,7 +4,7 @@ import { Col, Container, Form, FormGroup, Input, Label, Row } from "reactstrap";
 
 import HomeUrl from '../assets/images/home-border.png';
 import Feature from '../assets/images/features/img-3.png';
-
+import img from '../assets/images/contact.png'
 export default class Contact extends Component {
   render() {
     return (
@@ -25,7 +25,7 @@ export default class Contact extends Component {
                 <div className="mt-4 home-img text-center">
                   <div className="animation-2"></div>
                   <div className="animation-3"></div>
-                  <img src={Feature} className="img-fluid" alt="" />
+                  <img src={img} className="img-fluid" alt="" />
                 </div>
               </Col>
               <Col lg={6}>

@@ -56,9 +56,9 @@ export default class Slides extends Component {
       arrows: false,
       autoplay:true,
       dotsClass: "slick-dots slick-thumb carousel-indicators",
-      customPaging: function (slideitem) {
+      customPaging: function (i) {
         return (
-          <img src={slideitem.img} alt="" className=" testi-img img-fluid rounded mx-auto d-block" />
+          <img src={process.env.PUBLIC_URL + '/images/' + (i+1) +'.png'} alt="" className=" testi-img img-fluid rounded mx-auto d-block" />
         );
       },
     };
